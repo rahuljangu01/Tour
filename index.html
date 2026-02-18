@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagabond | Explore the Unseen</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">VAGABOND</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Escape to Paradise</h1>
+            <p>Discover the world's most breathtaking hidden gems.</p>
+            <div class="search-container">
+                <input type="text" placeholder="Where to? (e.g. Bali, Alps)">
+                <button class="btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations (Grid) -->
+    <section id="destinations" class="destinations">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="dest-grid">
+            <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" alt="Bali">
+                <div class="dest-info">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Tropical Bliss</p>
+                </div>
+            </div>
+            <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+                <div class="dest-info">
+                    <h3>Paris, France</h3>
+                    <p>The City of Light</p>
+                </div>
+            </div>
+            <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1512100356956-c12872638f59" alt="Santorini">
+                <div class="dest-info">
+                    <h3>Santorini, Greece</h3>
+                    <p>Azure Horizons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Image Gallery Slider -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Visual Journeys</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach"></div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Mountains"></div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1" alt="Lake"></div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking">
+        <div class="booking-container">
+            <h2>Start Your Adventure</h2>
+            <form id="travel-form">
+                <div class="input-group">
+                    <label>Destination</label>
+                    <input type="text" required placeholder="Enter location">
+                </div>
+                <div class="input-group">
+                    <label>Guests</label>
+                    <input type="number" min="1" value="1">
+                </div>
+                <div class="input-group">
+                    <label>Travel Date</label>
+                    <input type="date" required>
+                </div>
+                <button type="submit" class="btn-primary">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Vagabond Travel Agency. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
